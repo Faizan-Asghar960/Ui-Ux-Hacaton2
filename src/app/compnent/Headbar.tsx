@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from 'next/link';
 // components/HeaderBar.tsx
@@ -11,15 +11,15 @@ const HeaderBar = () => {
 
   return (
     <div className="w-full h-[40px] bg-purple-700 flex flex-col md:flex-row justify-between items-center px-4 space-y-2 md:space-y-0">
-
-      {/* Left Side - Only Number & Email */}
+      
+      {/* Left Side - Number & Email */}
       <div className="flex items-center space-x-4">
         <span className="text-white text-sm sm:text-base">+1-800-123-4567</span>
         <span className="text-white text-sm sm:text-base">contact@website.com</span>
       </div>
 
       {/* Center Section - Language, Currency, Wishlist, Login, and Cart */}
-      <div className="flex items-center space-x-4 text-sm sm:text-base">
+      <div className="flex flex-wrap items-center justify-center md:space-x-4 space-x-0 text-sm sm:text-base space-y-2 md:space-y-0">
         {/* Language Dropdown */}
         <select
           value={language}
@@ -42,22 +42,23 @@ const HeaderBar = () => {
           <option value="INR">INR</option>
         </select>
 
-        {/* Wishlist */}
-        <button className="text-white hover:text-red-400">❤️ Wishlist</button>
+        {/* Wishlist Button */}
+        <button className="text-Black hover:text-red-400">❤️ Wishlist</button>
 
         {/* Login Button */}
         <div>
-  <Link href="/login">
-    <button className="text-white hover:text-yellow-400">Login</button>
-  </Link>
-</div>
+          <Link href="/login">
+            <button className="text-Black hover:text-yellow-400">Login</button>
+          </Link>
+        </div>
+
         {/* Add to Cart Button */}
         <div>
-  <Link href="/Shoping-Cart">
-    <button className="text-white hover:text-yellow-400">🛒 Add to Cart</button>
-  </Link>
-</div>
-</div>
+          <Link href="/Shoping-Cart">
+            <button className="text-Black hover:text-yellow-400">🛒 Add to Cart</button>
+          </Link>
+        </div>
+      </div>
       
     </div>
   );

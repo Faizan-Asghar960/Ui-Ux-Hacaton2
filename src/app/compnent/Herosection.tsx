@@ -18,7 +18,8 @@ const HeroSection = () => {
         <div
           className="absolute"
           style={{
-            width: '400px',
+            width: '100%',
+            maxWidth: '400px',
             height: '400px',
             top: '100px',
             left: '10%',
@@ -36,7 +37,8 @@ const HeroSection = () => {
         <div
           className="absolute"
           style={{
-            width: '600px',
+            width: '100%',
+            maxWidth: '600px',
             height: '500px',
             top: '161px',
             left: '70%',
@@ -62,7 +64,8 @@ const HeroSection = () => {
             padding: '20px',
             borderRadius: '8px',
             boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-            width: '400px',
+            width: '80%',
+            maxWidth: '400px',
           }}
         >
           <h1 className="text-3xl font-bold text-black leading-tight mb-2">Welcome to Our Store</h1>
